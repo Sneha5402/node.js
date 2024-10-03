@@ -22,9 +22,9 @@ function notifyVideo(){
 // publishVideo();
 // notifyVideo();
 
-uploadVideo(function(){
-    publishVideo(function(){
-        notifyVideo();
-    })
-})
+// uploadVideo(function(){
+//     publishVideo(function(){
+//         notifyVideo();
+//     })
+// })
 

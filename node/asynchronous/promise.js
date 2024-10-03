@@ -7,15 +7,15 @@ const p1=new Promise((resolve, reject) => {
 const p2=new Promise((resolve, reject) => {
     setTimeout(()=>{
         reject('failure')
-    },1000);
+    },2000);
 })
 
 // Promise.all([p1,p2]).then(console.log).catch(console.log)
 // Promise.allSettled([p1,p2]).then(console.log).catch(console.log)
-// Promise.race([p1,p2]).then(console.log).catch(console.log)
+Promise.race([p1,p2]).then(console.log).catch(console.log)
 
-p1.then(console.log)
-p2.catch(console.log)
+// p1.then(console.log)
+// p2.catch(console.log)
 
 // const f1=(val,callback)=>{
 //     return callback(val+10)
@@ -31,7 +31,7 @@ p2.catch(console.log)
 
 // console.log(f1(1,callback))
 
-// const p1=val=>new Promise((resolve, reject) => {
+// const p1 =val=>new Promise((resolve, reject) => {
 //     setTimeout(()=>{
 //         resolve(val+10)
 //     },1000);

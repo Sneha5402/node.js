@@ -6,7 +6,7 @@
 // fn().then((msg)=>console.log(msg))
 
 let reachA=new Promise((resolve, reject) => {
-    const reached= false
+    const reached= true
     if (reached)
         setTimeout(resolve,3000,'sneha has reached')
     else
